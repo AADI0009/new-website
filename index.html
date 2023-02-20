@@ -5,7 +5,7 @@
 	<style>
 		body {
 			background-color: rgb(255, 0, 0);
-			transition: background-color 0.1s;
+			transition: background-color 1s ease-in-out;
 		}
 		img:hover {
 			animation: rotate 2s linear infinite;
@@ -24,15 +24,20 @@
 			var r = Math.floor(Math.random() * 256);
 			var g = Math.floor(Math.random() * 256);
 			var b = Math.floor(Math.random() * 256);
-			document.body.style.backgroundColor = "rgb(" + r + ", " + g + ", " + b + ")";
+			var currentColor = document.body.style.backgroundColor;
+			var newColor = "rgb(" + r + ", " + g + ", " + b + ")";
+			if (currentColor !== newColor) {
+				document.body.style.transition = "background-color 0.3s ease-in-out";
+				document.body.style.backgroundColor = newColor;
+			}
 		}
-		setInterval(changeColor, 1000);
+		setInterval(changeColor, 300);
 	</script>
 </head>
 <body>
 	<h1>Get ready to rock with Stone Music Party!</h1>
-	<p>Our music bot will get you grooving and shaking like a leaf on a windy day!</p>
-	<img src="https://media.discordapp.net/attachments/1070766708706517033/1076598606901018714/IMG_3692.png" alt="Funny Image">
-	<p>Hover over the image to see it rotate like a spinning top!</p>
+	<p>probably the best musec bot on disxord😎😎😎😎</p>
+	<img src="https://media.discordapp.net/attachments/1070766708706517033/1076598606901018714/IMG_3692.png" alt="Stone Music">
+	<p>a good audio discord music bot</p>
 </body>
 </html>
