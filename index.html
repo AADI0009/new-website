@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Stone Music</title>
+	<style>
+		body {
+			background-color: rgb(255, 0, 0);
+			transition: background-color 0.1s;
+		}
+	</style>
+	<script>
+		function changeColor() {
+			var r = Math.floor(Math.random() * 256);
+			var g = Math.floor(Math.random() * 256);
+			var b = Math.floor(Math.random() * 256);
+			document.body.style.backgroundColor = "rgb(" + r + ", " + g + ", " + b + ")";
+		}
+		setInterval(changeColor, 1000);
+	</script>
+</head>
+<body>
+	<h1>Invite Stone Music to your house party!</h1>
+	<p>Best music bot in whole discord 😎😎!</p>
+</body>
+</html>
