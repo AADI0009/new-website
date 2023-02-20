@@ -4,12 +4,38 @@
 	<title>Stone Music Party</title>
 	<style>
 		body {
-			background-color: rgb(255, 0, 0);
-			transition: background-color 1s ease-in-out;
+			background: radial-gradient(circle at center, rgba(20, 20, 20, 0.8), rgba(0, 0, 0, 1));
+			color: white;
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-family: sans-serif;
 		}
+
+		.circle {
+			width: 100px;
+			height: 100px;
+			background-color: white;
+			border-radius: 50%;
+			animation: pulse 1s infinite alternate;
+		}
+
+		@keyframes pulse {
+			from {
+				transform: scale(1);
+				opacity: 1;
+			}
+			to {
+				transform: scale(1.2);
+				opacity: 0;
+			}
+		}
+
 		img:hover {
 			animation: rotate 2s linear infinite;
 		}
+
 		@keyframes rotate {
 			from {
 				transform: rotate(0deg);
@@ -19,25 +45,12 @@
 			}
 		}
 	</style>
-	<script>
-		function changeColor() {
-			var r = Math.floor(Math.random() * 256);
-			var g = Math.floor(Math.random() * 256);
-			var b = Math.floor(Math.random() * 256);
-			var currentColor = document.body.style.backgroundColor;
-			var newColor = "rgb(" + r + ", " + g + ", " + b + ")";
-			if (currentColor !== newColor) {
-				document.body.style.transition = "background-color 0.3s ease-in-out";
-				document.body.style.backgroundColor = newColor;
-			}
-		}
-		setInterval(changeColor, 300);
-	</script>
 </head>
 <body>
+	<div class="circle"></div>
 	<h1>Get ready to rock with Stone Music Party!</h1>
-	<p>probably the best musec bot on disxord😎😎😎😎</p>
-	<img src="https://media.discordapp.net/attachments/1070766708706517033/1076598606901018714/IMG_3692.png" alt="Stone Music">
-	<p>a good audio discord music bot</p>
+	<p>the best musec bot on discord 😎😎!</p>
+	<img src="https://media.discordapp.net/attachments/1070766708706517033/1076598606901018714/IMG_3692.png" alt="Funny Image">
+	<p>oh wow the logo is sick😳😳!</p>
 </body>
 </html>
